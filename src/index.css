@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.tox-statusbar__branding,
+.tox-promotion,
+.tox-statusbar,
+.tox-statusbar__text-container,
+.tox-statusbar__path,
+.tox-statusbar__path-item {
+  visibility: hidden;
+}
+
+.star {
+  visibility: hidden;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.star::before {
+  content: "\2606";
+  position: absolute;
+  visibility: visible;
+}
+
+.star:checked::before {
+  content: "\2605";
+  position: absolute;
+}
+
