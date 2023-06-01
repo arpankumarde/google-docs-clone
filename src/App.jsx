@@ -1,7 +1,7 @@
-import Navbar from './components/Navbar';
-import { uselocalStorage } from './components/localStorage';
-import DocEditor from './components/DocEditor';
+import { uselocalStorage } from './hooks';
 import res from './api/res';
+import { Navbar, DocEditor } from './components'
+
 
 export default function App() {
   const [sidenav, setSidenav] = uselocalStorage("sidenav", true);

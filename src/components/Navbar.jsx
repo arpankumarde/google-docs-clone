@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { uselocalStorage } from './localStorage';
+import { useState } from 'react';
+import { uselocalStorage } from '../hooks';
 import res from '../api/res';
 
 

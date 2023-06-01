@@ -1,7 +1,5 @@
-import { useRef, useEffect, useState } from 'react';
 import { Editor } from '@tinymce/tinymce-react';
-import { uselocalStorage } from './localStorage';
-import res from '../api/res';
+import { uselocalStorage } from '../hooks';
 
 const DocEditor = () => {
     const [text, setText] = uselocalStorage('textVal', 'Type @ to Insert');
@@ -27,7 +25,7 @@ const DocEditor = () => {
                 }}
                 value={value}
                 init={{
-                    height: '95vh',
+                    height: '90vh',
                     directionality: 'ltr',
                     font_size_formats: '8pt 10pt 12pt 14pt 16pt 18pt 24pt 36pt 48pt',
                     menu: {

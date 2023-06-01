@@ -90,6 +90,7 @@
     overflow: hidden
 }
 
+
 .tox-tinymce-aux {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     z-index: 1300
@@ -2008,7 +2009,9 @@ body.tox-dialog__disable-scroll {
 .tox:not(.tox-tinymce-inline) .tox-editor-header {
     /* background-color: #fff; */
     border-top: none;
+    border-left: none;
     border-bottom: none;
+    border-bottom: 0.8px solid #00000070;
     /* box-shadow: 0 2px 2px -2px rgba(34, 47, 62, .1), 0 8px 8px -4px rgba(34, 47, 62, .07); */
     /* padding: 4px 0 */
 }
@@ -3146,6 +3149,8 @@ body.tox-dialog__disable-scroll {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
+    margin-left: 0.8rem;
+    border-left: 0.8px solid #00000070;
     min-height: 0
 }
 
@@ -3750,6 +3755,7 @@ body.tox-dialog__disable-scroll {
     border-radius: 2rem;
     margin-left: 1.3rem;
     margin-right: 1.3rem;
+    margin-bottom: 1rem;
     /* #edf2fa; */
 }
 
